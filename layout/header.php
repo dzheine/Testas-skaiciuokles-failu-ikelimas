@@ -32,6 +32,16 @@
                 <li class="nav-item">
                     <a href="http://localhost/galerija/scripts/gallery.php" class="nav-link">Galerry </a>
                 </li>
+                <li class="nav-item">
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Calculators
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="http://localhost/galerija/KMI/KMI_forma.php">KMI</a>
+                        <a class="dropdown-item" href="#">Converter</a>
+                    </div>
+                </li>
             </ul>
 
             <!-- Authentication links -->

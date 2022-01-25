@@ -60,7 +60,7 @@ include 'layout/header.php';
                                 Blue
                             </label>
                         </div>
-                        <button class="btn btn-success" type="submit" name="submit">Upload</button>
+                        <button class="btn btn-success" type="submit" name="submit" value="submit">Upload</button>
                     </form>
                     <p class="card-text">Accepted image types: jpg.</p>
                 </div>
