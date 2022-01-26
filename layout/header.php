@@ -39,7 +39,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="http://localhost/galerija/KMI/KMI_forma.php">KMI</a>
-                        <a class="dropdown-item" href="#">Converter</a>
+                        <a class="dropdown-item" href="http://localhost/galerija/Converter/converter_form.php">Converter</a>
                     </div>
                 </li>
             </ul>
