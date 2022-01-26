@@ -9,11 +9,48 @@ if($_POST){
     $from = $_POST['from'];
     $to = $_POST['to'];
     $diff= $from-$to;
-    var_dump($diff);
-
+  
     if((!empty($_POST['number'])) && (!empty($_POST['from'])) && (!empty($_POST['to']))){
         if(is_numeric($_POST['number']) && $_POST['number'] > 0) { 
+        
               $result = $number * (10 ** $diff);
+           
+                // if($from == 1 && $to == 1){
+                //     $result = $number*1;
+                // } else if ($from == 1 && $to == 2){
+                //     $result = $number/10;
+                // } else if ($from == 1 && $to == 3){
+                //     $result = $number/100;
+                // } else if ($from == 1 && $to == 4){
+                //     $result = $number/1000;
+                // } else if($from == 2 && $to == 2){
+                //     $result = $number*1;
+                // } else if ($from == 2 && $to == 1){
+                //     $result = $number*10;
+                //     echo  $result;
+                // } else if ($from == 2 && $to == 3){
+                //     $result = $number/10;
+                // } else if ($from == 2 && $to == 4){
+                //     $result = $number/100;
+                // } else if($from == 3 && $to == 3){
+                //     $result = $number*1;
+                // } else if ($from == 3 && $to == 1){
+                //     $result = $number*100;
+                //     echo  $result;
+                // } else if ($from == 3 && $to ==2){
+                //     $result = $number*10;
+                // } else if ($from == 3 && $to == 4){
+                //     $result = $number/10;
+                // } else if($from == 4 && $to == 4){
+                //     $result = $number*1;
+                // } else if ($from == 4 && $to == 3){
+                //     $result = $number*10;
+                //     echo  $result;
+                // } else if ($from == 4 && $to ==2){
+                //     $result = $number*100;
+                // } else if ($from == 4 && $to == 1){
+                //     $result = $number*1000;
+                // }
             } else {
                 echo "INPUT IS NOT A NUMBER";
             }       

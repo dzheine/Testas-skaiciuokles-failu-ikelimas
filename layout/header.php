@@ -40,6 +40,7 @@
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="http://localhost/galerija/KMI/KMI_forma.php">KMI</a>
                         <a class="dropdown-item" href="http://localhost/galerija/Converter/converter_form.php">Converter</a>
+                        <a class="dropdown-item" href="http://localhost/galerija/Converter/converter2.php">Converter2</a>
                     </div>
                 </li>
             </ul>
