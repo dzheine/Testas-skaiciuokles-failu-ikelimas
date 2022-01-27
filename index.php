@@ -82,3 +82,9 @@ Bonus:
 1. Paveikslėlių galerija veikia visada, nepriklausomai nuo to ar į ją patenkame užpildę formą.  Pavadinimų gali nerodyti.
 2. Paveikslėlius galima sukelti tik žinant slaptažodį.
 Galutinis variantas turės būti sukeltas į Github. -->
+<!-- 
+Programavimo testas.
+Sukurkite testą iš 10 klausimų apie PHP, HTML, CSS, JS.
+Klausimas turi 4 atsakymo variantus, vienas teisngas.
+Supildžius testą, gauname rezultatą kiek atsakėmo teisingai.
+Jūs sugalvojate klausimus, atsakymo variantus, pasirenkate GET/POST, ar atskiruose puslapiuose scriptas ir testas.

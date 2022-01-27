@@ -43,6 +43,9 @@
                         <a class="dropdown-item" href="http://localhost/galerija/Converter/converter2.php">Converter2</a>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <a href="http://localhost/galerija/testas/testas.php" class="nav-link">Testas </a>
+                </li>
             </ul>
 
             <!-- Authentication links -->
