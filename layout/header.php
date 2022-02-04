@@ -16,7 +16,7 @@
  
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
     <div class="container">
-        <a href="#" class="navbar-brand">Failu ikelimas</a>
+        <a href="http://localhost/galerija" class="navbar-brand">Forma</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -54,7 +54,7 @@
                     <a href="#" class="nav-link">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Register</a>
+                    <a href="http://localhost/galerija/views/register.php" class="nav-link">Register</a>
                 </li>
             </ul>
 

@@ -1,70 +1,41 @@
 <?php
 include 'layout/header.php';
+
+$usernameValue = $emailValue = $passError = "";
+if ($_GET) {
+    $usernameValue = $_GET['username'];
+    $emailValue = $_GET['email'];
+    $passError = $_GET['error'];
+}
+
 ?>
 
 <div class="container py-4">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card bg-light mb-8">
-                <div class="card-header">Please Upload 4 Images to Gallery</div>
-                <div class="card-body">
-                    <form action="http://localhost/galerija/scripts/gallery.php" method="POST" enctype="multipart/form-data">
-                        <div class="row my-2">
-                            <div class="col">
-                                <input type="file" class="form-control-file" name="image1">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" name="imageTitle1" placeholder="Image Title">
-                            </div>
-                        </div>
-                        <div class="row my-2">
-                            <div class="col">
-                                <input type="file" class="form-control-file" name="image2">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" name="imageTitle2" placeholder="Image Title">
-                            </div>
-                        </div>
-                        <div class="row my-2">
-                            <div class="col">
-                                <input type="file" class="form-control-file" name="image3">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" name="imageTitle3" placeholder="Image Title">
-                            </div>
-                        </div>
-                        <div class="row my-2">
-                            <div class="col">
-                                <input type="file" class="form-control-file" name="image4">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" name="imageTitle4" placeholder="Image Title">
-                            </div>
-                        </div>
-                        <p>Please select background color:</p>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="color" id="danger" value="danger">
-                            <label class="form-check-label" for="danger">
-                                Red
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="color" id="light" value="light" checked>
-                            <label class="form-check-label" for="light">
-                                White
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="color" id="info" value="info">
-                            <label class="form-check-label" for="info">
-                                Blue
-                            </label>
-                        </div>
-                        <button class="btn btn-success" type="submit" name="submit" value="submit">Upload</button>
-                    </form>
-                    <p class="card-text">Accepted image types: jpg.</p>
+            <h2>Please fill registration form!</h2>
+            <form action="scripts/register.php" method="POST">
+                <div class="form-floating my-2">
+                    <input type="text" name="username" class="form-control" required
+                        value="<?php echo $usernameValue ?>">
+                    <label for="username">Username</label>
                 </div>
-            </div>
+                <div class="form-floating my-2">
+                    <input type="email" class="form-control" name="email" required value="<?php echo $emailValue ?>">
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-floating my-2">
+                    <input type="password" name="password" class="form-control" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="form-floating my-2">
+
+                    <input type="password" name="confirmPassword" class="form-control" required>
+                    <span class="badge bg-danger"><?php echo $passError ?></span>
+                    <label for="confirmPassword">Confirm Password</label>
+                </div>
+                <button type="submit" class="btn btn-lg btn-primary">Register</button>
+            </form>
         </div>
     </div>
 </div>

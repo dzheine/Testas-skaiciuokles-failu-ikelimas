@@ -18,7 +18,9 @@ if($_GET){
     $q9 = $_GET['q9'];
     $count = 0;
 
-    
+    if (isset($gender) && $gender=="female"){
+        echo "checked";
+    }
 }   
 
 
