@@ -1,27 +1,3 @@
-<!-- Programavimo testas.
-Sukurkite testą iš 10 klausimų apie PHP, HTML, CSS, JS.
-Klausimas turi 4 atsakymo variantus, vienas teisngas.
-Supildžius testą, gauname rezultatą kiek atsakėmo teisingai.
-Jūs sugalvojate klausimus, atsakymo variantus, pasirenkate GET/POST, ar atskiruose puslapiuose scriptas ir testas. -->
-
-<!-- array_column — Return the values from a single column in the input array
-array_diff — Computes the difference of arrays
-array_map — Applies the callback to the elements of the given arrays
-array_unique — Removes duplicate values from an array
-array_unique — Removes duplicate values from an array
-array_splice — Remove a portion of the array and replace it with something else
-array_unshift — Prepend one or more elements to the beginning of an array
-PHP $_GET is a PHP super global variable which is used to collect form data after submitting an HTML form with method="get".
-PHP $_POST is a PHP super global variable which is used to collect form data after submitting an HTML form with method="post". $_POST is also widely used to pass variables.
-$_SERVER is a PHP super global variable which holds information about headers, paths, and script locations. -->
-<!-- $_FILES An associative array of items uploaded to the current script via the HTTP POST method
-sort() - sort arrays in ascending order
-rsort() - sort arrays in descending order
-asort() - sort associative arrays in ascending order, according to the value
-ksort() - sort associative arrays in ascending order, according to the key
-arsort() - sort associative arrays in descending order, according to the value
-krsort() - sort associative arrays in descending order, according to the key
- -->
 
 <?php 
 
@@ -42,52 +18,83 @@ include '../layout/header.php';
                         </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="q1" id="exampleRadios1" value="array_map">
+                                <?php 
+                                if (isset($q1) && $q1=="array_map"){
+                                    echo "checked";  
+                                    } ?>                                
                                 <label class="form-check-label" for="exampleRadios1">
                                 array_map
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="q1" id="exampleRadios2" value="array_splice">
+                                <?php 
+                                if (isset($q1) && $q1=="array_splice"){
+                                    echo "checked";  
+                                    } ?>    
                                 <label class="form-check-label" for="exampleRadios2">
                                 array_splice
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="q1" id="exampleRadios2" value="array_unique">
+                                <?php 
+                                if (isset($q1) && $q1=="array_unique"){
+                                    echo "checked";  
+                                    } ?>    
                                 <label class="form-check-label" for="exampleRadios2">
                                 array_unique
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="q1" id="exampleRadios2" value="array_diff">
+                                <?php 
+                                if (isset($q1) && $q1=="array_diff"){
+                                    echo "checked";  
+                                    } ?>    
                                 <label class="form-check-label" for="exampleRadios2">
                                 array_diff
                                 </label>
                             </div>
-                            
                         <div class="alert alert-secondary my-3" role="alert">
                         2. Which function in PHP applies the callback to the elements of the given arrays
                         </div>
                         <div class="form-check">
                                 <input class="form-check-input" type="radio" name="q2" id="exampleRadios1" value="array_diff" >
+                                <?php 
+                                if (isset($q2) && $q2=="array_diff"){
+                                    echo "checked";  
+                                    } ?>    
                                 <label class="form-check-label" for="exampleRadios1">
                                 array_diff
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="q2" id="exampleRadios2" value="array_splice">
+                                <?php 
+                                if (isset($q2) && $q2=="array_splice"){
+                                    echo "checked";  
+                                    } ?>
                                 <label class="form-check-label" for="exampleRadios2">
                                 array_splice
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="q2" id="exampleRadios2" value="array_map">
+                                <?php 
+                                if (isset($q2) && $q2=="array_map"){
+                                    echo "checked";  
+                                    } ?>
                                 <label class="form-check-label" for="exampleRadios2">
                                 array_map
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="q2" id="exampleRadios2" value="array_unshift">
+                                <?php 
+                                if (isset($q2) && $q2=="array_unshift"){
+                                    echo "checked";  
+                                    } ?>
                                 <label class="form-check-label" for="exampleRadios2">
                                 array_unshift
                                 </label>
