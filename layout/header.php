@@ -27,7 +27,7 @@
                     <a href="http://localhost/galerija/views/file_upload.php" class="nav-link">File Upload Form</a>
                 </li>
                 <li class="nav-item">
-                    <a href="http://localhost/galerija/index.php" class="nav-link">Galerry Upload Form</a>
+                    <a href="http://localhost/galerija/views/gallery_upload.php" class="nav-link">Galerry Upload Form</a>
                 </li>
                 <li class="nav-item">
                     <a href="http://localhost/galerija/scripts/gallery.php" class="nav-link">Galerry </a>
