@@ -56,6 +56,9 @@
                 <li class="nav-item">
                     <a href="http://localhost/galerija/views/register.php" class="nav-link">Register</a>
                 </li>
+                <li class="nav-item">
+                    <a href="http://localhost/galerija/scripts/logout.php" class="nav-link">Log out</a>
+                </li>
             </ul>
 
         </div>

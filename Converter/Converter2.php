@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!isset($_SESSION['username'])){
+    header("Location: ../views/login.php");
+}
 include '../layout/header.php';
 $mili=$centi=$deci=$meters='';
 // var_dump($_POST);

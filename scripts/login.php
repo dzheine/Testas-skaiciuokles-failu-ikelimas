@@ -24,8 +24,10 @@ try{
 var_dump($result);
 
 if($result){
+    session_start();
     $db_PasswordHash= $result['password'];
     if(password_verify($password, $db_PasswordHash)){
+        $_SESSION['username'] = $result['first_name'];
        // echo "Login successful";
        header("Location: ../views/users.php");
 
